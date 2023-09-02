@@ -1,0 +1,238 @@
+@media only screen and (max-width:1750px) {
+    .file-resolution-long {
+        width: 1080px;
+    }
+}
+
+@media only screen and (max-width:1640px) {
+    .file-resolution-long {
+        width: 1005px;
+    }
+}
+
+@media only screen and (max-width:1520px) {
+    .file-resolution-long {
+        width: 887px;
+    }
+}
+
+@media only screen and (max-width:1441px) {
+    .file-resolution-long {
+        width: 887px;
+    }
+    .mgl12 {
+        margin-left: 8%;
+    }
+    .file-resolution-short {
+        left: 31.5%;
+        width: 490px;
+    }
+}
+
+@media only screen and (max-width:1400px) {
+    .file-resolution-long {
+        width: 850px;
+    }
+    .mgl12 {
+        margin-left: 8%;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    .file-resolution-long {
+        width: 630px;
+    }
+}
+
+/* ================================================================= */
+
+@media only screen and (max-height:920px) {
+    .mgb80 {
+        margin-bottom: 70px;
+    }
+    .file-resolution-short {
+        height: 624px;
+    }
+}
+
+@media only screen and (max-height:900px) {
+    .mgb80 {
+        margin-bottom: 55px;
+    }
+    .file-resolution-long {
+        height: 585px;
+    }
+    .file-resolution-short {
+        height: 585px;
+    }
+}
+
+
+
+
+/* FOR PHONES */
+
+@media only screen and (max-width:425px) {
+    #current-logo {
+        margin: 0;
+    }
+
+    .user-name {
+        margin-left: 0px !important;
+    }
+
+    #burger-icon-close {
+        margin-left: 0px;
+        margin-top: -360px !important;
+        left: 2.4% !important;
+    }
+
+    #burger-icon {
+        position: absolute;
+        margin-left: 2% !important;
+    }
+
+    #glavnaya {
+        margin-left: 0px !important;
+    }
+
+    #library {
+        margin-left: 0px;
+    }
+
+    #contacts {
+        margin-left: 0px;
+    }
+
+    .card-info {
+        margin-top: 40px;
+    }
+
+    .margin-top-40px {
+        margin-top: 40px;
+    }
+    .margin-top-4per {
+        margin-top: -4%;
+    }
+
+    .opacity-none-phone {
+        opacity: 0;
+    }
+
+    .center {
+        width: 100%;
+        margin-left: 0%;
+        text-align: center;
+    }
+
+    .background-blackout {
+        background-color: rgba(0, 0, 0, 0.55);
+        bottom: 0;
+        height: 100%;
+        left: 0;
+        overflow: auto;
+        padding: 20px;
+        position: fixed;
+        right: 0;
+        text-align: center;
+        top: 0;
+        width: 100%;
+        z-index: 2;
+        transition: 0.3s ease;
+    }
+    header.header {
+        z-index: 3;
+    }
+
+    .main-menu {
+        transition: 0.3s ease;
+    }
+
+
+    /* mid-content */
+
+    div.mid-line {
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    div.subject-name {
+        width: 100%;
+        margin-left: 0%;
+        text-align: center;
+        margin-top: 0px;
+    }
+    div.subject-item-theme {
+        width: 100%;
+        margin-left: 0%;
+        text-align: center;
+    }
+    div.subject-item-note {
+        width: 100%;
+        margin-left: 0%;
+        text-align: center;
+    }
+    p.category {
+        width: 100%;
+        margin-left: 0%;
+        text-align: center;
+    }
+    .subject-item-button {
+        width: 100%;
+        margin-left: 0%;
+        text-align: center;
+    }
+    .subject-item-file {
+        display: none;
+    }
+
+    /* Form */
+    .add-task-form {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -93%);
+        position: fixed;
+        width: 330px;
+        height: 500px;
+        z-index: 3;
+    }
+
+    form#add-task {
+        width: 255px !important;
+    }
+
+    input.item-input {
+        padding: 30px 0 21px;
+        font-size: 14px;
+    }
+
+    #item-category {
+        margin-top: 10px !important;
+    }
+
+    h1.h1-text-form {
+        font-size: 22px;
+        margin-top: -15px;
+    }
+
+    #img-upload-button {
+        width: 255px;
+        margin-top: 20px;
+    }
+
+    button.submit-button {
+        width: 255px;
+        margin-top: 15px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    select#category {
+        font-size: 14px;
+    }
+
+    #form-close {
+        margin-left: -20px !important;
+    }
+}

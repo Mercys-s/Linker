@@ -1,0 +1,59 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static 'workflow/css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'linker/css/main_adaptive_phone.css' %}"> 
+
+    <link rel="icon" href="{% static 'workflow/img/general/favico.svg' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+    {% block css %}
+    {% endblock %}
+    <title>Workflow</title>
+</head>
+<body>
+    <div id = "page-preloader" class="preloader">
+        <div class="loader"></div>
+    </div>
+    <div class="content-container" id="content-container">
+        <header class="header z-index-2">
+            <div class="header-container">
+                <div class="logo">
+                    <a href="{% url 'home' %}" id="current-logo"><img src="{% static 'workflow/img/general/LOGO.svg' %}" alt="logo"></a>
+                </div>
+                <nav role="navigation">
+                    <li><a href="#" id="burger-icon">&#9776;</a></li>
+                    <ul class="main-menu opacity-none-phone" id="ul-nav">
+                        <li><a href="{% block url_main_or_workspace %}{% endblock %}" id="glavnaya" class="nav-bar-el">{% block main_or_workspace %}{% endblock %}</a></li>
+                        <li><a href="#" id="library" class="nav-bar-el">Библеотека</a></li>
+                        <li><a href="#" id="contacts"class="nav-bar-el">Контакты</a></li>
+                        {% block navigation %}{% endblock %}
+                        <li><a href="#" id="burger-icon-close" class="element-hidden"><img src="{% static 'linker/img/general/form-close.svg' %}" alt="" style="height: 19px;"></a></li> 
+                    </ul>
+                </nav>
+                <li class="user">
+                    <a href="{% url 'logout' %}" class="user-logout none">
+                        <img src="{% static 'linker/img/general/logout_icon.svg' %}" alt="">
+                    </a>
+                    <a href="#" class="user-name nav-bar-el">
+                        <img class="user-logo" src="{% static 'linker/img/general/user_logo.svg' %}" alt="userlogo">
+                        <span class="username-span">{{ user.username }}</span>
+                    </a>
+                </li>
+            </div>
+        </header>
+        {% block content %}
+        {% endblock %}
+    </div>
+    <script src="{% static 'workflow/js/base.js' %}"></script>
+    <script src="{% static 'linker/js/adaptive_menu.js' %}"></script>
+</body>
+</html>
