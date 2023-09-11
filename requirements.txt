@@ -1,0 +1,7 @@
+Django
+djangorestframework
+pillow
+Djoser
+aspose-words
+transliterate
+django_user_agents
